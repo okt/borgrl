@@ -18,3 +18,10 @@ To build a release for the `wasm/` hosted website presentaion.
 ```
 wasm-bindgen target/wasm32-unknown-unknown/release/borgrl.wasm --out-dir wasm --no-modules --no-typescript
 ```
+
+
+
+
+## License
+
+Licensed under MIT license ([LICENSE-MIT](LICENSE-MIT) or https://opensource.org/licenses/MIT)
