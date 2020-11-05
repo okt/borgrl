@@ -7,6 +7,12 @@ A rougelike written in Rust as a means of learning the language.
 Feel free to look about. 
 
 
+### Running
+To run for debug
+```
+cargo run
+```
+
 
 ### Compilation
 To build a release build for WASM. 
