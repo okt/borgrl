@@ -1,1 +1,4 @@
 /target
+
+/wasm/borgrl.js
+/wasm/borgrl_bg.wasm
