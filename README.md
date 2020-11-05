@@ -30,4 +30,4 @@ wasm-bindgen target/wasm32-unknown-unknown/release/borgrl.wasm --out-dir wasm --
 
 ## License
 
-Licensed under MIT license ([LICENSE](LICENSE-MIT) or https://opensource.org/licenses/MIT)
+Licensed under MIT license ([LICENSE](LICENSE) or https://opensource.org/licenses/MIT)
