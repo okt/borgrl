@@ -6,9 +6,9 @@ pub use components::*;
 mod map;
 pub use map::*;
 mod player;
-use player::*;
-// mod rect;
-// pub use rect::Rect;
+pub use player::*;
+mod rect;
+pub use rect::Rect;
 
 pub struct State {
     pub ecs: World,
@@ -47,7 +47,8 @@ fn main() -> rltk::BError {
     gs.ecs.register::<Renderable>();
     gs.ecs.register::<Player>();
 
-    let map = new_test_map();
+    // let map = new_test_map();
+    let map = new_map_rooms_and_corridors();
     gs.ecs.insert(map);
 
     gs.ecs
