@@ -22,6 +22,10 @@ struct LeftMover {}
 #[derive(Component, Debug)]
 struct Player {}
 
+struct State {
+    ecs: World,
+}
+
 fn try_move_player(delta_x: i32, delta_y: i32, ecs: &mut World) {
     let mut positions = ecs.write_storage::<Position>();
     let mut players = ecs.write_storage::<Player>();
@@ -44,10 +48,6 @@ fn player_input(gs: &mut State, ctx: &mut Rltk) {
             _ => {}
         },
     }
-}
-
-struct State {
-    ecs: World,
 }
 
 impl GameState for State {
@@ -110,10 +110,10 @@ fn main() -> rltk::BError {
         .with(Player {})
         .build();
 
-    for i in 0..30 {
+    for i in 0..10 {
         gs.ecs
             .create_entity()
-            .with(Position { x: i * 2, y: 20 })
+            .with(Position { x: i * 7, y: 20 })
             .with(Renderable {
                 glyph: rltk::to_cp437('φ'),
                 fg: RGB::named(rltk::RED),
